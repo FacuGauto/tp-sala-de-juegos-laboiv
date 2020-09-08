@@ -11,6 +11,9 @@ export class MapaDeGoogleComponent implements OnInit {
   lng: number = 5.809007;
    // google maps zoom level
    zoom: number = 8;
+
+   mapClicked($event)
+  {} 
    
 
 
