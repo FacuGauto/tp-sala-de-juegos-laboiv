@@ -1,5 +1,5 @@
 import { Component, OnInit ,Input,Output,EventEmitter} from '@angular/core';
-import { JuegoAgilidad } from '../../clases/juego-agilidad'
+import { JuegoAdivina } from '../../clases/juego-adivina'
 
 import {Subscription} from "rxjs";
 import {TimerObservable} from "rxjs/observable/TimerObservable";
@@ -11,7 +11,7 @@ import {TimerObservable} from "rxjs/observable/TimerObservable";
 export class AgilidadAritmeticaComponent implements OnInit {
    @Output() 
   enviarJuego :EventEmitter<any>= new EventEmitter<any>();
-  nuevoJuego : JuegoAgilidad;
+  nuevoJuego : JuegoAdivina;
   ocultarVerificar: boolean;
   Tiempo: number;
   repetidor:any;
@@ -21,7 +21,7 @@ export class AgilidadAritmeticaComponent implements OnInit {
    constructor() {
      this.ocultarVerificar=true;
      this.Tiempo=5; 
-    this.nuevoJuego = new JuegoAgilidad();
+    this.nuevoJuego = new JuegoAdivina();
     console.info("Inicio agilidad");  
   }
   NuevoJuego() {
